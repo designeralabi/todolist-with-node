@@ -11,15 +11,15 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     
-    var today = new Date();
-    var options = {
+    const today = new Date();
+    const options = {
         weekday: "long",
         year: "numeric",
         month: "long",
         day: "numeric"
     };
 
-    var day = today.toLocaleDateString("en-us", options);
+    const day = today.toLocaleDateString("en-us", options);
 
     res.render('list', {kindOfDay: day, newListItems: items});
 });
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res)=>{
 
-    var item = req.body.newItem;    
+   const item = req.body.newItem;    
     items.push(item);
 
     res.redirect("/");
