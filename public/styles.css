@@ -1,7 +1,7 @@
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px;
+  min-height: 100%;
   font-family: 'helvetica neue';
 }
 
@@ -64,7 +64,7 @@ button {
   background-color: #A683E3;
   color: #fff;
   font-size: 30px;
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   border-width: 0;
 }
 
@@ -93,4 +93,31 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+#author{
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#author a{
+  text-decoration: none;
+}
+
+#author a:hover{
+  color: #fff;
+}
+
+
+@media screen and (max-width: 375px) {
+  
+  .box {
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 240px;
+  }
+
 }
