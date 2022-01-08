@@ -64,7 +64,8 @@ button {
   background-color: #A683E3;
   color: #fff;
   font-size: 30px;
-  padding-bottom: 2px;
+  padding: 3px;
+  text-align: center;
   border-width: 0;
 }
 
@@ -120,12 +121,5 @@ footer {
     width: 240px;
   }
 
-  button {
-    height: 35px;
-    width: 35px;
-    border-radius: 100%;
-    font-size: 30px;
-    padding-bottom: 2px;
-  }
 
 }
